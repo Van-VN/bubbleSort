@@ -6,6 +6,8 @@ function bubbleSort(array: number[]) {
         // array[j] = array[i];
         // array[i] = temp;
         [array[i], array[j]] = [array[j], array[i]];
+        console.log(`Swap ${array[i]} with ${array[j]}`);
+        console.log(`Current Array is: \n${array}\n`);
       }
     }
   }
@@ -14,7 +16,7 @@ function bubbleSort(array: number[]) {
 
 // let testArray = [10, 11, 21, 412, 79, 90, 121, 56, 78, 2, 21, 6];
 let testArray2: number[] = [];
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 10; i++) {
   testArray2.push(Math.round(Math.random() * 100));
 }
 console.log(testArray2);
