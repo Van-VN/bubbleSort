@@ -6,7 +6,7 @@ function bubbleSort(array: number[]) {
         // array[j] = array[i];
         // array[i] = temp;
         [array[j], array[j + 1]] = [array[j + 1], array[j]];
-        console.log(`Swap ${array[i]} with ${array[j]}`);
+        console.log(`Swap ${array[j]} with ${array[j + 1]}`);
         console.log(`Current Array is: \n${array}\n`);
       }
     }
