@@ -5,9 +5,9 @@ function bubbleSort(array: number[]) {
         // let temp: number = array[j];
         // array[j] = array[i];
         // array[i] = temp;
-        [array[j], array[j + 1]] = [array[j + 1], array[j]];
         console.log(`Swap ${array[j]} with ${array[j + 1]}`);
         console.log(`Current Array is: \n${array}\n`);
+        [array[j], array[j + 1]] = [array[j + 1], array[j]];
       }
     }
   }
@@ -19,5 +19,5 @@ let testArray2: number[] = [];
 for (let i = 0; i < 10; i++) {
   testArray2.push(Math.round(Math.random() * 100));
 }
-console.log(testArray2);
+console.log(`Starting Array: ${testArray2}\n`);
 console.log(bubbleSort(testArray2));
